@@ -10,5 +10,8 @@ App.resizable(False, False) #for both x,y axis
 App.tk.call("source",SUN_VALLEY_THEME)
 #App.tk.call("set_theme",THEME_MODE)
 
+#ussr interface
+Frame = ttk.Frame()
+
 #For running window
 App.mainloop()
