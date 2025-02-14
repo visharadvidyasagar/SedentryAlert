@@ -14,5 +14,12 @@ App.tk.call("source",SUN_VALLEY_THEME)
 frame = ttk.Frame(App, padding=10)
 frame.grid(row=0, column=0, padx=10, pady=10)
 
+#checkbutton, if checked 1, else 0, in the frame
+sedentary_alert = IntVar() #for notifications
+sed_check = ttk.Checkbutton(
+    frame, variable = sedentary_alert,
+    text = "Sedentary Alert"
+)
+
 #For running window
 App.mainloop()
