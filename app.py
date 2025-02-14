@@ -5,3 +5,4 @@ from _app import *
 App = Tk()
 App.title("Sedentary Alert")
 App.iconbitmap(APP_ICO)
+App.resizable(False, False)
