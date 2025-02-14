@@ -1,5 +1,10 @@
 import json
+from os import path
 
+#assests
+SUN_VALLEY_THEME = path.join("venv\Lib\site-packages\sv_ttk\sv.tcl")
+
+JSDATA: dict
 
 #Loading json file
 def load_json():
