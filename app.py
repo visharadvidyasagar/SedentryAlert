@@ -30,5 +30,7 @@ sed_check.grid(row=0, column=0, pady=10)
 sed_lbl = ttk.Label(frame, text="interval")
 sed_lbl.grid(row=1, column=0, pady=5)
 
+interval_options=["15 Mins","20 Mins","30 Mins","40 Mins"]
+
 #For running window
 App.mainloop()
