@@ -11,7 +11,7 @@ App.tk.call("source",SUN_VALLEY_THEME)
 #App.tk.call("set_theme",THEME_MODE)
 
 #ussr interface
-frame = ttk.Frame()
+frame = ttk.Frame(App, padding=10)
 
 #For running window
 App.mainloop()
