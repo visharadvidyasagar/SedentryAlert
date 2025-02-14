@@ -20,6 +20,7 @@ sed_check = ttk.Checkbutton(
     frame, variable = sedentary_alert,
     text = "Sedentary Alert"
 )
+sed_check.grid(row=0, column=0, pady=10)
 
 #For running window
 App.mainloop()
