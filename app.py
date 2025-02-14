@@ -34,6 +34,9 @@ interval_options=["15 Mins","20 Mins","30 Mins","40 Mins"] #dropdown array
 interval_period= StringVar()
 
 #dropdown menu
+def intevral_change(interval):
+    print(interval)
+
 interval_dropdown=ttk.OptionMenu(
     frame, interval_period, "Select", *interval_options
 )
