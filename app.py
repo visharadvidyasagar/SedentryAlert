@@ -38,7 +38,8 @@ def intevral_change(interval):
     print(interval)
 
 interval_dropdown=ttk.OptionMenu(
-    frame, interval_period, "Select", *interval_options
+    frame, interval_period, "Select", *interval_options,
+    command=intevral_change
 )
 interval_dropdown.grid(row=1, column=1, pady=5)
 
