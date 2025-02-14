@@ -12,6 +12,7 @@ App.tk.call("source",SUN_VALLEY_THEME)
 
 #ussr interface
 frame = ttk.Frame(App, padding=10)
+frame.grid(row=0, column=0, padx=10, pady=10)
 
 #For running window
 App.mainloop()
