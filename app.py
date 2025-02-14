@@ -26,5 +26,9 @@ sed_check = ttk.Checkbutton(
 )
 sed_check.grid(row=0, column=0, pady=10)
 
+#dropdown
+sed_lbl = ttk.Label(frame, text="interval")
+sed_lbl.grid(row=1, column=0, pady=5)
+
 #For running window
 App.mainloop()
