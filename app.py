@@ -9,3 +9,6 @@ App.resizable(False, False) #for both x,y axis
 
 App.tk.call("source",SUN_VALLEY_THEME)
 App.tk.call("set_theme","light")
+
+#For running window
+App.mainloop()
