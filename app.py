@@ -37,6 +37,7 @@ interval_period= StringVar()
 interval_dropdown=ttk.OptionMenu(
     frame, interval_period, "Select", *interval_options
 )
+interval_dropdown.grid(row=1, column=1, pady=5)
 
 #For running window
 App.mainloop()
