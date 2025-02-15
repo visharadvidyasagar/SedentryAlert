@@ -65,7 +65,10 @@ interval_period.set(
 #threading
 def init_sed_thread():
     global SED_THREAD
-    SED_THREAD = Thread(target= sed_alert)
+    SED_THREAD = Thread(
+        target= sed_alert,
+        daemon= True
+    )
 
 init_sed_thread()
 
