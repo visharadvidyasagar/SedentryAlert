@@ -29,5 +29,5 @@ def update_json(data:dict):
 
 #notifier funtion
 def _notify(
-        msg, icon, title, soundfile
+        msg, icon=COFFEE_ICO, title=None, soundfile=DOLPHIN_WAV
 ):
