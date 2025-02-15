@@ -65,5 +65,8 @@ def init_sed_thread():
 
 init_sed_thread()
 
+if JSDATA["sedentary_alert"]:
+    SED_THREAD.start()
+
 #For running window
 App.mainloop()
