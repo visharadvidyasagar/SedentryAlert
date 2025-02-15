@@ -28,5 +28,6 @@ def update_json(data:dict):
         json.dump(data, jsfile, indent=2)
 
 #notifier funtion
-def _notify():
-    
+def _notify(
+        msg, icon, title, soundfile
+):
