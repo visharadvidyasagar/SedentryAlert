@@ -29,6 +29,10 @@ def toggle_sed_alert():
     JSDATA["sedentary_alert"] = bool(sedentary_alert.get())
     update_json(JSDATA)
 
+    if JSDATA["sedentary_alert"] and not SED_THREAD.is_alive():
+        init_sed_thread()
+        SED_THREAD.start()
+
 sed_check = ttk.Checkbutton(
     frame, variable = sedentary_alert,
     text = "Sedentary Alert", command=toggle_sed_alert
