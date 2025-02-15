@@ -25,6 +25,7 @@ sedentary_alert.set(
 )
 def toggle_sed_alert():
     JSDATA["sedentary_alert"] = bool(sedentary_alert.get())
+    update_json(JSDATA)
 
 sed_check = ttk.Checkbutton(
     frame, variable = sedentary_alert,
