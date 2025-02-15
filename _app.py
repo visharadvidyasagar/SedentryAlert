@@ -1,6 +1,9 @@
 import json
 from os import path
 
+import winsound
+from win10toast import ToastNotifier
+
 #assests
 #SUN_VALLEY_THEME = path.join("venv\Lib\site-packages\sv_ttk\sv.tcl")
 SUN_VALLEY_THEME = path.join("SUNVALLEY","sv.tcl")
