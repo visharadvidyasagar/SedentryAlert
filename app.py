@@ -38,6 +38,9 @@ sed_lbl.grid(row=1, column=0, pady=5)
 
 interval_options=["15 Mins","20 Mins","30 Mins","40 Mins"] #dropdown array
 interval_period= StringVar()
+interval_period.set(
+    f"{JSDATA['interval']} Min"
+)
 
 #dropdown menu
 def intevral_change(interval):
