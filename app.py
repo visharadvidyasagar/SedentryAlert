@@ -45,7 +45,8 @@ interval_period.set(
 
 #dropdown menu
 def intevral_change(interval: str):
-    JSDATA["interval"] = int(interval.split)[0]
+    JSDATA["interval"] = int(interval.split()[0])
+    update_json(JSDATA)
 
 interval_dropdown=ttk.OptionMenu(
     frame, interval_period, "Select", *interval_options,
