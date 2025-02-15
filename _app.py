@@ -31,3 +31,6 @@ def update_json(data:dict):
 def _notify(
         msg, icon=COFFEE_ICO, title=None, soundfile=DOLPHIN_WAV
 ):
+    toaster.show_toast(
+        title=title if title else "Notification"
+    )
