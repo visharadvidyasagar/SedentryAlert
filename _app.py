@@ -42,4 +42,4 @@ def _notify(
         winsound.PlaySound(soundfile, flags=winsound.SND_FILENAME)
 
 def sed_alert():
-    
+    dt=load_json()
