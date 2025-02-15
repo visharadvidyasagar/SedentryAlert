@@ -58,7 +58,9 @@ interval_period.set(
     f"{JSDATA['interval']} Min"
 )
 
-sed_alert()
+#threading
+def init_sed_thread():
+    
 
 #For running window
 App.mainloop()
