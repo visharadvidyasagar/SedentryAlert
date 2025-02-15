@@ -60,7 +60,7 @@ interval_period.set(
 
 #threading
 def init_sed_thread():
-    
+    SED_THREAD = Thread(target= sed_alert)
 
 #For running window
 App.mainloop()
