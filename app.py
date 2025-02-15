@@ -30,7 +30,7 @@ sed_check = ttk.Checkbutton(
     frame, variable = sedentary_alert,
     text = "Sedentary Alert", command=toggle_sed_alert
 )
-sed_check.grid(row=0, column=0, pady=10)
+sed_check.grid(row=0, column=0, columnspan=2, pady=5)
 
 #dropdown
 sed_lbl = ttk.Label(frame, text="interval")
