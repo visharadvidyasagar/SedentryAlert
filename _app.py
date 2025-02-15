@@ -16,3 +16,7 @@ JSDATA: dict
 def load_json():
     with open("appdata.json") as jsfile:
         return json.load(jsfile)
+    
+#Updating JSON
+def update_json(data:dict):
+    
