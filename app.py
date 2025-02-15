@@ -1,5 +1,7 @@
 from tkinter import Tk, ttk, StringVar, IntVar
 
+from threading import Thread
+
 from _app import *
 
 #Loading JSDATA
