@@ -1,5 +1,6 @@
 import json
 from os import path
+from time import sleep
 
 import winsound
 from win10toast import ToastNotifier
@@ -43,3 +44,5 @@ def _notify(
 
 def sed_alert():
     dt=load_json()
+    if dt['sedentary_alert']:
+        sleep()
