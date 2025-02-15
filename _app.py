@@ -51,3 +51,5 @@ def sed_alert():
         _notify(
             msg="Have a Break, Have a KitKat"
         )
+
+        sed_alert()
