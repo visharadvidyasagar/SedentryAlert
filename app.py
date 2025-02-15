@@ -63,5 +63,7 @@ def init_sed_thread():
     global SED_THREAD
     SED_THREAD = Thread(target= sed_alert)
 
+init_sed_thread()
+
 #For running window
 App.mainloop()
