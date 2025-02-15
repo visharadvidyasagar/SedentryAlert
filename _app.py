@@ -32,5 +32,8 @@ def _notify(
         msg, icon=COFFEE_ICO, title=None, soundfile=DOLPHIN_WAV
 ):
     toaster.show_toast(
-        title=title if title else "Notification"
+        title=title if title else "Notification",
+        msg=msg,
+        icon_path=icon,
+        threaded=True #for not interupting python or main thread
     )
