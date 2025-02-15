@@ -56,5 +56,7 @@ interval_period.set(
     f"{JSDATA['interval']} Min"
 )
 
+sed_alert()
+
 #For running window
 App.mainloop()
