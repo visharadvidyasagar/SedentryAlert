@@ -47,3 +47,7 @@ def sed_alert():
     if dt['sedentary_alert']:
         interval_secs = dt['intevral'] * 60
         sleep(interval_secs)
+
+        _notify(
+            msg="Have a Break, Have a KitKat"
+        )
