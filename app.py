@@ -39,9 +39,7 @@ sed_lbl.grid(row=1, column=0, pady=10)
 
 interval_options=["15 Mins","20 Mins","30 Mins","40 Mins"] #dropdown array
 interval_period= StringVar()
-interval_period.set(
-    f"{JSDATA['interval']} Min"
-)
+
 
 #dropdown menu
 def intevral_change(interval: str):
@@ -53,6 +51,10 @@ interval_dropdown=ttk.OptionMenu(
     command=intevral_change
 )
 interval_dropdown.grid(row=1, column=1, pady=5)
+
+interval_period.set(
+    f"{JSDATA['interval']} Min"
+)
 
 #For running window
 App.mainloop()
