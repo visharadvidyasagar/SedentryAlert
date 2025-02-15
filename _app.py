@@ -45,4 +45,5 @@ def _notify(
 def sed_alert():
     dt=load_json()
     if dt['sedentary_alert']:
-        sleep()
+        interval_secs = dt['intevral'] * 60
+        sleep(interval_secs)
