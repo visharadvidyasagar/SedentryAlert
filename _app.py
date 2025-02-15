@@ -20,3 +20,4 @@ def load_json():
 #Updating JSON
 def update_json(data:dict):
     with open("appdata.json","w") as jsfile:
+        json.dump(data, jsfile)
