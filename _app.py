@@ -26,3 +26,7 @@ def load_json():
 def update_json(data:dict):
     with open("appdata.json","w") as jsfile:
         json.dump(data, jsfile, indent=2)
+
+#notifier funtion
+def _notify():
+    
