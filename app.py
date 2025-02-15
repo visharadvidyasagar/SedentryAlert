@@ -35,7 +35,7 @@ sed_check.grid(row=0, column=0, columnspan=2, pady=5)
 
 #dropdown
 sed_lbl = ttk.Label(frame, text="interval")
-sed_lbl.grid(row=1, column=0, pady=5)
+sed_lbl.grid(row=1, column=0, pady=10)
 
 interval_options=["15 Mins","20 Mins","30 Mins","40 Mins"] #dropdown array
 interval_period= StringVar()
