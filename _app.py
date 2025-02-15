@@ -40,3 +40,6 @@ def _notify(
 
     if soundfile:
         winsound.PlaySound(soundfile, flags=winsound.SND_FILENAME)
+
+def sed_alert():
+    
