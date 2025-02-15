@@ -37,3 +37,6 @@ def _notify(
         icon_path=icon,
         threaded=True #for not interupting python or main thread
     )
+
+    if soundfile:
+        winsound.PlaySound(soundfile, flags=winsound.SND_FILENAME)
