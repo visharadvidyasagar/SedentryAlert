@@ -18,11 +18,14 @@ frame = ttk.Frame(App, padding=10)
 frame.grid(row=0, column=0, padx=10, pady=10)
 
 #checkbutton, if checked 1, else 0, in the frame
+sedentary_alert = IntVar() #for notifications
 
+sedentary_alert.set(
+    1 if JSDATA["sedentary_alert"] else 0
+)
 def toggle_sed_alert():
     print(sedentary_alert.get())
 
-sedentary_alert = IntVar() #for notifications
 sed_check = ttk.Checkbutton(
     frame, variable = sedentary_alert,
     text = "Sedentary Alert", command=toggle_sed_alert
